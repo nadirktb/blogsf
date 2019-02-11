@@ -22,4 +22,11 @@ class HomeController
 
     }
 
+    /**
+     * @Route("article/{article}")
+     */
+    public function article($article){
+        return new Response("Annonce mercato $article");
+    }
+
 }
